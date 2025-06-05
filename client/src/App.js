@@ -70,6 +70,8 @@ function App() {
               </PrivateRoute>
             }
           />
+          {/* Catch-all route for undefined paths */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Box>
     </Router>
